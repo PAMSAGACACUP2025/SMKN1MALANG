@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pamsagaca CUP 2025 | SMKN 1 Malang</title>
+    <link rel="icon" href="img/SMKN1MALANG.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1E40AF", // Blue-700
+              secondary: "#F59E0B", // Amber-500
+              accent: "#10B981", // Emerald-500
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      /* --- Animasi Fade-In untuk Semua Bagian Konten --- */
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* --- Gaya Khusus Hero Section --- */
+      /* Menggunakan min-height yang responsif dan sederhana */
+      .hero-section {
+        background-attachment: scroll !important;
+        min-height: 400px; /* Default untuk desktop */
+        background-position: center 0% !important; /* Prioritaskan bagian atas gambar */
+      }
+
+      @media (max-width: 639px) {
+        .hero-section {
+          min-height: 320px !important; /* Mobile */
+        }
+      }
+
+      @media (min-width: 640px) and (max-width: 1023px) {
+        .hero-section {
+          min-height: 380px !important; /* Tablet */
+        }
+      }
+
+      /* Efek Teks pada Hero */
+      .hero-title,
+      .hero-subtitle {
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+      }
+
+      /* --- SVG Icon Instagram --- */
+      .ig-icon {
+        width: 40px;
+        height: 40px;
+        fill: currentColor; /* Menggunakan warna teks parent */
+      }
+
+      @media (min-width: 640px) {
+        .ig-icon {
+          width: 48px;
+          height: 48px;
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gradient-to-br from-blue-50 via-white to-indigo-100 min-h-screen"
+  >
+    <header
+      class="hero-section text-white shadow-lg relative flex items-center justify-center w-full overflow-hidden"
+      style="
+        background-image: url('img/BANER_PAMSCUP.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+      "
+    >
+      <div
+        class="absolute inset-0 bg-black bg-opacity-40 z-10"
+        aria-hidden="true"
+      ></div>
+
+      <div
+        class="container mx-auto px-4 py-8 hero-content fade-in relative z-20 text-center w-full max-w-7xl"
+      >
+        <h1
+          class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold hero-title animate-bounce"
+        >
+          Pamsagaca CUP 2025
+        </h1>
+        <p
+          class="text-lg sm:text-xl md:text-2xl hero-subtitle mt-2 opacity-95 max-w-3xl mx-auto"
+        >
+          Shoot Out Your Energy
+        </p>
+        <p class="text-sm italic opacity-80 mt-1">
+          Hubungi Kami untuk Informasi Lebih Lanjut
+        </p>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 sm:py-12">
+      <div class="max-w-5xl mx-auto w-full">
+        <section id="tentang" class="text-center mb-12 sm:mb-16 fade-in">
+          <h2
+            class="text-3xl sm:text-4xl font-extrabold text-primary mb-6 border-b-4 border-secondary inline-block pb-1"
+          >
+            Tentang Turnamen
+          </h2>
+          <p class="text-gray-700 text-base sm:text-lg max-w-3xl mx-auto mb-8">
+            Pamsagaca CUP 2025 adalah turnamen olahraga bola basket bergengsi antar SMP/MTS sederajat Se-Malang Raya
+            yang diselenggarakan oleh SMKN 1 Kota Malang. Ikuti kegiatan seru ini,
+            rebut gelar juara, dan tunjukkan kemampuan terbaik tim Anda!
+          </p>
+          <div
+            class="bg-white rounded-2xl shadow-xl p-6 sm:p-10 mt-6 max-w-4xl mx-auto border-t-4 border-accent"
+          >
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+              <div>
+                <div class="flex items-center text-primary mb-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 mr-3"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.726a4.5 4.5 0 11-6.364 0l-4.5 4.5h15.348l-4.5-4.5z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 14a2 2 0 100-4 2 2 0 000 4z"
+                    />
+                  </svg>
+                  <h3 class="text-xl font-bold">Tempat Pelaksanaan</h3>
+                </div>
+                <p class="text-gray-600 ml-9">
+                  Graha Pamsagaca SMKN 1 Kota Malang, Jl. Sonokembang,
+                  Bandungrejosari, Kec. Sukun, Kota Malang
+                </p>
+              </div>
+              <div>
+                <div class="flex items-center text-primary mb-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 mr-3"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <h3 class="text-xl font-bold">Tanggal Pelaksanaan</h3>
+                </div>
+                <p class="text-gray-600 ml-9">
+                  📅 8 November 2025 - 23 November 2025
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr class="my-12 border-t-2 border-gray-200" />
+
+        <section id="kontak" class="text-center mb-12 sm:mb-16 fade-in">
+          <h2
+            class="text-3xl sm:text-4xl font-extrabold text-primary mb-6 border-b-4 border-secondary inline-block pb-1"
+          >
+            Narahubung Resmi
+          </h2>
+          <p class="text-gray-700 text-base sm:text-lg max-w-3xl mx-auto mb-8">
+            Jangan ragu untuk menghubungi panitia melalui kontak di bawah ini.
+            Kami siap melayani pertanyaan seputar pendaftaran, teknis, dan
+            persyaratan.
+          </p>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 max-w-4xl mx-auto"
+          >
+            <div
+              class="bg-white rounded-2xl shadow-xl p-6 sm:p-8 text-center hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1 fade-in border-t-4 border-secondary"
+            >
+              <div
+                class="w-20 h-20 bg-secondary rounded-full mx-auto mb-4 flex items-center justify-center text-white text-3xl font-extrabold ring-4 ring-secondary/50"
+              >
+                N
+              </div>
+              <h3 class="text-2xl font-bold text-primary mb-1">Naila</h3>
+              <p class="text-secondary text-sm font-medium mb-4">Humas 1</p>
+              <div class="space-y-3 text-base">
+                <p class="font-semibold text-gray-700">
+                  <span class="text-primary">Telepon:</span> +62 858-5553-2425
+                </p>
+                <a
+                  href="https://wa.me/6285855532425"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Hubungi Naila via WhatsApp"
+                  class="inline-flex items-center bg-accent text-white px-5 py-2 rounded-full text-lg font-semibold hover:bg-green-600 transition-colors shadow-lg"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 mr-2"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  ></svg>
+                  WhatsApp Sekarang
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-2xl shadow-xl p-6 sm:p-8 text-center hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1 fade-in border-t-4 border-accent"
+            >
+              <div
+                class="w-20 h-20 bg-accent rounded-full mx-auto mb-4 flex items-center justify-center text-white text-3xl font-extrabold ring-4 ring-accent/50"
+              >
+                N
+              </div>
+              <h3 class="text-2xl font-bold text-primary mb-1">Nathasya</h3>
+              <p class="text-accent text-sm font-medium mb-4">Humas 2</p>
+              <div class="space-y-3 text-base">
+                <p class="font-semibold text-gray-700">
+                  <span class="text-primary">Telepon:</span> +62 877-1581-3552
+                </p>
+                <a
+                  href="https://wa.me/6287715813552"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Hubungi Nathasya via WhatsApp"
+                  class="inline-flex items-center bg-secondary text-white px-5 py-2 rounded-full text-lg font-semibold hover:bg-yellow-600 transition-colors shadow-lg"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 mr-2"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  ></svg>
+                  WhatsApp Sekarang
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr class="my-12 border-t-2 border-gray-200" />
+
+        <section id="daftar" class="text-center mb-12 sm:mb-16 fade-in">
+          <h2
+            class="text-3xl sm:text-4xl font-extrabold text-primary mb-6 border-b-4 border-accent inline-block pb-1"
+          >
+            Daftar Sekarang!
+          </h2>
+          <p class="text-gray-700 text-base sm:text-lg max-w-3xl mx-auto mb-8">
+            Jangan lewatkan kesempatan bergabung di Pamsagaca CUP 2025.
+            Pendaftaran bersifat wajib melalui tautan online di bawah ini.
+          </p>
+          <a
+            href="https://forms.gle/jvf7DamEzjpeYmqA7"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block bg-secondary text-white px-10 sm:px-12 py-4 sm:py-5 rounded-xl text-xl sm:text-2xl font-bold hover:bg-yellow-600 transition-colors shadow-2xl hover:shadow-primary/50 w-full md:w-auto transform hover:scale-[1.02] duration-300 ring-4 ring-secondary/30"
+          >
+            Klik untuk Link Pendaftaran Online 📝
+          </a>
+        </section>
+
+        <hr class="my-12 border-t-2 border-gray-200" />
+
+        <section id="dokumen" class="mb-12 sm:mb-16 fade-in">
+          <div class="text-center mb-8 sm:mb-10">
+            <h2
+              class="text-3xl sm:text-4xl font-extrabold text-primary mb-6 border-b-4 border-secondary inline-block pb-1"
+            >
+              Dokumen Pendukung
+            </h2>
+            <p class="text-gray-700 text-base sm:text-lg max-w-3xl mx-auto">
+              Unduh file-file penting untuk panduan lengkap turnamen. Pastikan
+              Anda membaca semua dokumen sebelum mendaftar.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            <div
+              class="text-center p-6 bg-white rounded-xl shadow-lg border-l-4 border-primary hover:shadow-xl transition-shadow duration-300"
+            >
+              <h3 class="text-xl sm:text-2xl font-bold text-primary mb-3">
+                Petunjuk Teknis (Juknis)
+              </h3>
+              <p
+                class="text-gray-600 mb-6 text-sm sm:text-base h-20 overflow-hidden"
+              >
+                Panduan teknis, aturan pertandingan, dan persyaratan peserta
+                Pamsagaca CUP 2025.
+              </p>
+              <a
+                href="assets/JUKNIS PAMSAGACA CUP 2025.pdf"
+                download="JUKNIS PAMSAGACA CUP 2025.docx"
+                class="inline-block bg-primary text-white px-5 py-2 rounded-lg text-base font-semibold hover:bg-blue-700 transition-colors shadow-md w-full"
+                aria-label="Download Petunjuk Teknis Pamsagaca CUP 2025 (docx)"
+              >
+                Download
+              </a>
+            </div>
+
+            <div
+              class="text-center p-6 bg-white rounded-xl shadow-lg border-l-4 border-secondary hover:shadow-xl transition-shadow duration-300"
+            >
+              <h3 class="text-xl sm:text-2xl font-bold text-primary mb-3">
+                Prosedur Pendaftaran
+              </h3>
+              <p
+                class="text-gray-600 mb-6 text-sm sm:text-base h-20 overflow-hidden"
+              >
+                Panduan langkah demi langkah untuk mendaftarkan tim Anda dengan
+                mudah melalui link online.
+              </p>
+              <a
+                href="assets/Prosedur_Pendaftaran_Pams_Cup_2025.docx"
+                download="Prosedur_Pendaftaran_Pams_Cup_2025.docx"
+                class="inline-block bg-secondary text-white px-5 py-2 rounded-lg text-base font-semibold hover:bg-yellow-600 transition-colors shadow-md w-full"
+                aria-label="Download Prosedur Pendaftaran Pamsagaca CUP 2025 (PDF)"
+              >
+                Download
+              </a>
+            </div>
+
+            <div
+              class="text-center p-6 bg-white rounded-xl shadow-lg border-l-4 border-accent hover:shadow-xl transition-shadow duration-300"
+            >
+              <h3 class="text-xl sm:text-2xl font-bold text-primary mb-3">
+                Formulir Biodata Pendaftaran
+              </h3>
+              <p
+                class="text-gray-600 mb-6 text-sm sm:text-base h-20 overflow-hidden"
+              >
+                Format biodata formulir pendaftaran resmi yang dapat diisi
+                sebagai draf sebelum input online.
+              </p>
+              <a
+                href="assets/Formulir Biodata Pendaftaran.docx"
+                download="Formulir Biodata Pendaftaran.docx"
+                class="inline-block bg-accent text-white px-5 py-2 rounded-lg text-base font-semibold hover:bg-green-600 transition-colors shadow-md w-full"
+                aria-label="Download Format Formulir Pendaftaran Pamsagaca CUP 2025 (PDF)"
+              >
+                Download
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <hr class="my-12 border-t-2 border-gray-200" />
+
+        <section id="sosial-media" class="text-center mb-12 fade-in">
+          <h2
+            class="text-3xl sm:text-4xl font-extrabold text-primary mb-6 border-b-4 border-secondary inline-block pb-1"
+          >
+            Ikuti Kami di Instagram
+          </h2>
+          <p class="text-gray-700 text-base sm:text-lg max-w-3xl mx-auto mb-8">
+            Dapatkan update terbaru, pengumuman jadwal, foto-foto event, dan
+            behind-the-scenes dari Pamsagaca CUP 2025!
+          </p>
+          <div
+            class="bg-white rounded-2xl shadow-xl p-8 sm:p-10 max-w-lg mx-auto hover:shadow-2xl transition-shadow duration-300 border-b-4 border-[#e4405f]"
+          >
+            <a
+              href="https://www.instagram.com/pamsagaca_cup/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center space-x-4 text-[#e4405f] hover:text-pink-700 transition-colors group"
+              aria-label="Kunjungi Profil Instagram Pamsagaca CUP"
+            >
+              <svg
+                class="ig-icon transition-transform duration-300 group-hover:scale-110"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.44-.645 1.44-1.44-.644-1.44-1.44-1.44z"
+                />
+              </svg>
+              <span class="text-2xl font-bold group-hover:underline"
+                >@pamsagaca_cup</span
+              >
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="bg-primary text-white text-center p-4 mt-8">
+      <p class="text-sm">
+        &copy; <span id="year"></span> Pamsagaca CUP | Diselenggarakan oleh SMKN
+        1 Malang.
+      </p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Ambil tahun saat ini untuk footer
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        // Observer untuk animasi fade-in
+        const faders = document.querySelectorAll(".fade-in");
+
+        const appearOptions = {
+          threshold: 0.1, // Mulai terlihat saat 10% elemen masuk viewport
+          rootMargin: "0px 0px -50px 0px", // Pangkas 50px dari bawah viewport
+        };
+
+        const appearOnScroll = new IntersectionObserver(function (
+          entries,
+          appearOnScroll
+        ) {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) {
+              return;
+            }
+            entry.target.classList.add("visible");
+            appearOnScroll.unobserve(entry.target);
+          });
+        },
+        appearOptions);
+
+        faders.forEach((fader) => {
+          appearOnScroll.observe(fader);
+        });
+
+        // Paksa Header/Hero untuk terlihat segera
+        document.querySelector(".hero-content").classList.add("visible");
+      });
+    </script>
+  </body>
+</html>
